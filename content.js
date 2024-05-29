@@ -7,8 +7,8 @@
   const locationElement = document.querySelector('.text-body-small.inline.t-black--light.break-words') || document.querySelector('.pv-top-card--list-bullet li');
   const aboutElement = document.querySelector('.wtkejGBVSAvIzUzNeRPDQcSUULNkzsvdNCz .full-width');
   const bioElement = document.querySelector('.text-body-medium.break-words');
-  const followerCountElement = document.querySelector('#ember522') ;
-  const connectionCountElement = document.querySelector('.pv-recent-activity-section-v2 .artdeco-container-card-action-bar .display-flex .pv-recent-activity-section__connection-count') || document.querySelector('.pv-top-card--list-bullet li:nth-child(1)');
+  let followerCountElement = document.querySelector('.TbCOOlaNGAcoldWavLBYETDwdcAORXqejKpr.TVDtraoFaZmRCZGXHuQDRyZUhnORQMgFYS .text-body-small.t-black--light.inline-block .t-bold');
+  let connectionCountElement = document.querySelector('.TbCOOlaNGAcoldWavLBYETDwdcAORXqejKpr.TVDtraoFaZmRCZGXHuQDRyZUhnORQMgFYS .text-body-small .ember-view .link-without-visited-state .t-bold');
 
   const name = nameElement ? nameElement.innerText.trim() : null;
   const location = locationElement ? locationElement.innerText.trim() : null;
