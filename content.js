@@ -1,13 +1,13 @@
 (async function() {
   // Wait for the page to fully load
-  await new Promise(resolve => setTimeout(resolve, 10000)); // Increase timeout for accurate data fetching
+  await new Promise(resolve => setTimeout(resolve, 3000)); // Increase timeout for accurate data fetching
 
   // Extract profile data using appropriate selectors
   const nameElement = document.querySelector('.text-heading-xlarge') || document.querySelector('.inline.t-24.t-black.t-normal.break-words');
   const locationElement = document.querySelector('.text-body-small.inline.t-black--light.break-words') || document.querySelector('.pv-top-card--list-bullet li');
-  const aboutElement = document.querySelector('.pv-about-section .pv-about__summary-text');
-  const bioElement = document.querySelector('.pv-about__summary-text') || document.querySelector('.pv-top-card-section__summary-text') || document.querySelector('.lt-line-clamp__more');
-  const followerCountElement = document.querySelector('.pv-recent-activity-section-v2 .artdeco-container-card-action-bar .display-flex .pv-recent-activity-section__follower-count') || document.querySelector('.pv-top-card--list-bullet li:nth-child(2)');
+  const aboutElement = document.querySelector('.wtkejGBVSAvIzUzNeRPDQcSUULNkzsvdNCz .full-width');
+  const bioElement = document.querySelector('.text-body-medium.break-words');
+  const followerCountElement = document.querySelector('#ember522') ;
   const connectionCountElement = document.querySelector('.pv-recent-activity-section-v2 .artdeco-container-card-action-bar .display-flex .pv-recent-activity-section__connection-count') || document.querySelector('.pv-top-card--list-bullet li:nth-child(1)');
 
   const name = nameElement ? nameElement.innerText.trim() : null;
