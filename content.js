@@ -5,10 +5,11 @@
   // Extract profile data using appropriate selectors
   const nameElement = document.querySelector('.text-heading-xlarge') || document.querySelector('.inline.t-24.t-black.t-normal.break-words');
   const locationElement = document.querySelector('.text-body-small.inline.t-black--light.break-words') || document.querySelector('.pv-top-card--list-bullet li');
-  const aboutElement = document.querySelector('.wtkejGBVSAvIzUzNeRPDQcSUULNkzsvdNCz .full-width');
+  // const aboutElement = document.querySelector('.gVMELMYXnjFVfaRujeMzHemCXyCtLXqaIiqOL.inline-show-more-text--is-collapsedinline-show-more-text--is-collapsed-with-line-clampfull-width');
+  const aboutElement = document.querySelector('.display-flex.ph5.pv3');
   const bioElement = document.querySelector('.text-body-medium.break-words');
-  let followerCountElement = document.querySelector('.TbCOOlaNGAcoldWavLBYETDwdcAORXqejKpr.TVDtraoFaZmRCZGXHuQDRyZUhnORQMgFYS .text-body-small.t-black--light.inline-block .t-bold');
-  let connectionCountElement = document.querySelector('.TbCOOlaNGAcoldWavLBYETDwdcAORXqejKpr.TVDtraoFaZmRCZGXHuQDRyZUhnORQMgFYS .text-body-small .ember-view .link-without-visited-state .t-bold');
+  let followerCountElement = document.querySelector('.text-body-small.t-black--light.inline-block .t-bold');
+  let connectionCountElement = document.querySelector('.text-body-small .ember-view .link-without-visited-state .t-bold');
 
   const name = nameElement ? nameElement.innerText.trim() : null;
   const location = locationElement ? locationElement.innerText.trim() : null;
